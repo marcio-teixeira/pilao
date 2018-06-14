@@ -1,0 +1,54 @@
+{
+    "name": "sage",
+    "homepage": "https://roots.io/sage/",
+    "authors": [
+        "Ben Word <ben@benword.com>"
+    ],
+    "license": "MIT",
+    "private": true,
+    "dependencies": {
+        "bootstrap": "git://github.com/twbs/bootstrap.git#v4.0.0-beta",
+        "popper.js": "^1.12.3",
+        "jQuery.mmenu": "mmenu#^6.1.8",
+        "font-awesome": "fontawesome#^4.7.0",
+        "slick-carousel": "^1.8.1",
+        "fancybox": "https://github.com/fancyapps/fancybox.git#^3.2.0",
+        "jquery-mask-plugin": "https://github.com/igorescobar/jQuery-Mask-Plugin.git",
+        "jquery-ui": "^1.12.1"
+    },
+    "overrides": {
+        "fancybox": {
+            "main": [
+                "./dist/jquery.fancybox.css",
+                "./dist/jquery.fancybox.js",
+                "./fonts/*"
+            ]
+        },
+        "font-awesome": {
+            "main": [
+                "./css/font-awesome.css",
+                "./fonts/*"
+            ]
+        },
+        "jQuery.mmenu": {
+            "main": [
+                "./dist/jquery.mmenu.all.css",
+                "./dist/jquery.mmenu.all.js"
+            ]
+        },
+        "slick-carousel": {
+            "main": [
+                "./slick/slick.css",
+                "./slick/slick-theme.css",
+                "./slick/slick.js",
+                "./fonts/*"
+            ]
+        },
+        "jquery-ui":{
+            "main": [
+                "./themes/vader/jquery-ui.min.css",
+                "./jquery-ui.min.js"
+            ]
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "devlud/pilaoprofessionalacaopdv",
+    "description": "Pilao Professional - acao pdv",
+    "require": {
+        "phpmailer/phpmailer": "^6.0"
+    },
+    "authors": [
+        {
+            "name": "Ludmilla Carvalho",
+            "email": "contato@devlud.com.br"
+        }
+    ]
+}

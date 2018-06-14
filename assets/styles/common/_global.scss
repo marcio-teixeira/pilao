@@ -1,0 +1,42 @@
+html {
+    min-height: 100%;
+}
+body {
+    font-family: $verdana;
+    background: $branco;
+    color: $grafite;
+}
+
+p{
+    line-height: rem(20);
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.clear{
+    clear: both;
+}
+.conteudo{
+    position: relative;
+    z-index: 1;
+}
+.textLeft{text-align: left}
+.textRight{text-align: right}
+.textCenter{text-align: center}
+:focus{outline: none;}
+
+@media (max-width: 575px) {
+    .og-close {
+        bottom: 10px;
+    }
+}
+
+@media (min-width: 576px) {
+    .og-close {
+        top: 10px;
+    }
+}
+

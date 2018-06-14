@@ -1,0 +1,44 @@
+.sac{
+    background: #fff;
+    padding: 30px 0;
+    h4{
+        color: #cf0a2c;
+        font-family: $museo700;
+        font-size: rem(20);
+        margin: 0;
+    }
+    p{
+        font-size: rem(12);
+        margin: 0;
+    }
+}
+footer{
+    background: #412020;
+    color: #fff;
+    font-size: rem(10);
+    padding: 30px 0;
+    img.logoFooter{
+        margin-right: 40px
+    }
+    a{
+        float:right;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    footer{
+        text-align: center;
+        img.logoFooter{
+            margin: 0 auto 10px;
+        }
+        span{
+            display: block;
+            margin: 0 auto 20px;
+        }
+        a{
+            float:right;
+            margin-top: 10px;
+        }
+    }
+}

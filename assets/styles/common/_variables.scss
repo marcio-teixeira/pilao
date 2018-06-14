@@ -1,0 +1,71 @@
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+@font-face {
+    font-family: 'museo300';
+    src: url('../fonts/museo300-regular_1-webfont.woff2') format('woff2'),
+         url('../fonts/museo300-regular_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'museo500';
+    src: url('../fonts/museo500-regular_0-webfont.woff2') format('woff2'),
+         url('../fonts/museo500-regular_0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'museo700';
+    src: url('../fonts/museo700-regular_1-webfont.woff2') format('woff2'),
+         url('../fonts/museo700-regular_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$museo: 'museo300';
+$museo500: 'museo500';
+$museo700: 'museo700';
+$verdana: Verdana, Geneva, sans-serif;
+
+/**
+ * Cores
+ */
+$branco: #fff;
+$preto: #000000;
+$amarelo: #fcba39;
+$azul: #113f6d;
+$roxo: #82348b;
+$vermelho: #cf0a2c;
+$grafite: #4c4c4c;
+
+/*Functions*/
+
+$browser-context: 16;
+@function rem($pixels, $context: $browser-context) {
+	@return #{$pixels/$context}rem;
+}
+
+/*Mixins*/
+@mixin boxShadow ($color: #2e2d2e) {
+	-webkit-box-shadow: inset 0px 0px 5px 0px $color;
+	-moz-box-shadow: inset 0px 0px 5px 0px $color;
+	box-shadow: inset 0px 0px 5px 0px $color;
+}
+
+@mixin transition {
+  transition: all .4s ease;
+  transition-property: all;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+@mixin filter($filter-type,$filter-amount) { 
+  -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
+  -moz-filter: $filter-type+unquote('(#{$filter-amount})');
+  -ms-filter: $filter-type+unquote('(#{$filter-amount})');
+  -o-filter: $filter-type+unquote('(#{$filter-amount})');
+  filter: $filter-type+unquote('(#{$filter-amount})');
+}
+
